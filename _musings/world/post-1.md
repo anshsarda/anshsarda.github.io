@@ -1,8 +1,9 @@
 ---
 layout: default
 nav: musings
-title: Placeholder Entry Two
-permalink: /musings/world/post-2/
+title: Placeholder Entry One
+topic: world
+date: 2026-08-05
 ---
 
 <div class="top-links"><a href="{{ "/musings/world/" | prepend: site.baseurl }}">back</a></div>

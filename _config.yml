@@ -11,3 +11,9 @@ google-analytics:
   id: ""
 
 exclude: ['package.json', 'src', 'node_modules']
+
+collections:
+  musings:
+    output: true
+    permalink: /musings/:path/
+

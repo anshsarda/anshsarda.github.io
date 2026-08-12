@@ -9,14 +9,11 @@ permalink: /musings/food/
 
 <hr class="entry-divider">
 
+{% assign topic_posts = site.musings | where: "topic", "food" | sort: "date" | reverse %}
+{% for post in topic_posts %}
 <div class="entry">
-  <a class="entry-title" href="{{ "/musings/food/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
-  <span class="entry-date">xx/xx/xx</span>
+  <a class="entry-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  <span class="entry-date">{{ post.date | date: "%m/%d/%y" }}</span>
 </div>
 <hr class="entry-divider">
-
-<div class="entry">
-  <a class="entry-title" href="{{ "/musings/food/post-2/" | prepend: site.baseurl }}">Placeholder Entry Two</a>
-  <span class="entry-date">xx/xx/xx</span>
-</div>
-<hr class="entry-divider">
+{% endfor %}

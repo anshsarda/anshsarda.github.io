@@ -11,32 +11,12 @@ permalink: /musings/
 
 <hr class="entry-divider">
 
+{% assign cutoff = site.time | date: '%s' | minus: 2592000 %}
+{% assign recent_musings = site.musings | where_exp: "p", "p.date | date: '%s' > cutoff" | sort: "date" | reverse %}
+{% for post in recent_musings %}
 <div class="entry">
-  <a class="entry-title" href="{{ "/musings/world/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
-  <span class="entry-date">xx/xx/xx</span>
+  <a class="entry-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  <span class="entry-date">{{ post.date | date: "%m/%d/%y" }}</span>
 </div>
 <hr class="entry-divider">
-
-<div class="entry">
-  <a class="entry-title" href="{{ "/musings/food/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
-  <span class="entry-date">xx/xx/xx</span>
-</div>
-<hr class="entry-divider">
-
-<div class="entry">
-  <a class="entry-title" href="{{ "/musings/words/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
-  <span class="entry-date">xx/xx/xx</span>
-</div>
-<hr class="entry-divider">
-
-<div class="entry">
-  <a class="entry-title" href="{{ "/musings/people/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
-  <span class="entry-date">xx/xx/xx</span>
-</div>
-<hr class="entry-divider">
-
-<div class="entry">
-  <a class="entry-title" href="{{ "/musings/self/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
-  <span class="entry-date">xx/xx/xx</span>
-</div>
-<hr class="entry-divider">
+{% endfor %}

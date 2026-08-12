@@ -2,7 +2,8 @@
 layout: default
 nav: musings
 title: Placeholder Entry Two
-permalink: /musings/people/post-2/
+topic: people
+date: 2025-11-11
 ---
 
 <div class="top-links"><a href="{{ "/musings/people/" | prepend: site.baseurl }}">back</a></div>

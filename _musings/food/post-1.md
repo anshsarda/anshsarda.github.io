@@ -2,7 +2,8 @@
 layout: default
 nav: musings
 title: Placeholder Entry One
-permalink: /musings/food/post-1/
+topic: food
+date: 2026-07-25
 ---
 
 <div class="top-links"><a href="{{ "/musings/food/" | prepend: site.baseurl }}">back</a></div>
