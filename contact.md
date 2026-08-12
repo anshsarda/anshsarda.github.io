@@ -5,4 +5,4 @@ title: Contact
 permalink: /contact/
 ---
 
-*(contact info goes here)*
+[anshsarda@outlook.com](mailto:anshsarda@outlook.com)
