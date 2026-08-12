@@ -1,9 +1,9 @@
 ---
 layout: default
-nav: about
+nav: home
 home: true
-title: About
+title: Home
 permalink: /
 ---
 
-*(about text goes here)*
+*(home text goes here)*
