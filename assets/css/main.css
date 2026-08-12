@@ -102,7 +102,7 @@ a:hover {
 }
 
 .entry-divider {
-  width: 6rem;
+  width: 12rem;
   margin: 0.6rem 0;
   border: 0;
   border-top: 1px solid rgba(244, 236, 216, 0.4);
@@ -124,24 +124,4 @@ a:hover {
   margin-top: 0.1rem;
   color: rgba(244, 236, 216, 0.55);
   font-size: 0.65rem;
-}
-
-.topic-world {
-  color: #e05c5c;
-}
-
-.topic-food {
-  color: #5ca9e0;
-}
-
-.topic-words {
-  color: #e0c85c;
-}
-
-.topic-people {
-  color: #6fbf73;
-}
-
-.topic-self {
-  color: #b08968;
 }

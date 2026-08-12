@@ -10,13 +10,13 @@ permalink: /musings/world/
 <hr class="entry-divider">
 
 <div class="entry">
-  <a class="entry-title topic-world" href="{{ "/musings/world/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
+  <a class="entry-title" href="{{ "/musings/world/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
   <span class="entry-date">xx/xx/xx</span>
 </div>
 <hr class="entry-divider">
 
 <div class="entry">
-  <a class="entry-title topic-world" href="{{ "/musings/world/post-2/" | prepend: site.baseurl }}">Placeholder Entry Two</a>
+  <a class="entry-title" href="{{ "/musings/world/post-2/" | prepend: site.baseurl }}">Placeholder Entry Two</a>
   <span class="entry-date">xx/xx/xx</span>
 </div>
 <hr class="entry-divider">

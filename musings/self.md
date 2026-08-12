@@ -10,13 +10,13 @@ permalink: /musings/self/
 <hr class="entry-divider">
 
 <div class="entry">
-  <a class="entry-title topic-self" href="{{ "/musings/self/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
+  <a class="entry-title" href="{{ "/musings/self/post-1/" | prepend: site.baseurl }}">Placeholder Entry One</a>
   <span class="entry-date">xx/xx/xx</span>
 </div>
 <hr class="entry-divider">
 
 <div class="entry">
-  <a class="entry-title topic-self" href="{{ "/musings/self/post-2/" | prepend: site.baseurl }}">Placeholder Entry Two</a>
+  <a class="entry-title" href="{{ "/musings/self/post-2/" | prepend: site.baseurl }}">Placeholder Entry Two</a>
   <span class="entry-date">xx/xx/xx</span>
 </div>
 <hr class="entry-divider">
