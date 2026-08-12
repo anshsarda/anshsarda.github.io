@@ -1,0 +1,52 @@
+.section-label {
+  margin: 0 0 1rem;
+  color: rgba($cream, 0.8);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.entry-divider {
+  width: 6rem;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid rgba($cream, 0.4);
+}
+
+.entry {
+  margin: 0;
+}
+
+.entry-title {
+  display: block;
+  color: $cream;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.entry-date {
+  display: block;
+  margin-top: 0.3rem;
+  color: rgba($cream, 0.55);
+  font-size: 0.8rem;
+}
+
+.topic-world {
+  color: #e05c5c;
+}
+
+.topic-food {
+  color: #5ca9e0;
+}
+
+.topic-words {
+  color: #e0c85c;
+}
+
+.topic-people {
+  color: #6fbf73;
+}
+
+.topic-self {
+  color: #b08968;
+}
