@@ -1,9 +1,6 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
 
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Crimson+Pro:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
-
 * {
   box-sizing: border-box;
 }
@@ -11,46 +8,49 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 html {
   margin: 0;
   min-height: 100%;
-  background-color: #170f29;
-  background: linear-gradient(160deg, #170f29, #34205c 55%, #170f29);
+  background: linear-gradient(180deg, #3a1063, #000000);
   background-attachment: fixed;
 }
 
 body {
-  margin: 0 auto;
-  padding: 4rem 1.5rem 2rem;
-  max-width: 680px;
+  margin: 0;
+  min-height: 100vh;
+  max-width: 640px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
   background: transparent;
-  color: #ece6f5;
-  font-family: 'Crimson Pro', serif;
-  font-size: 1.08rem;
+  color: #f4ecd8;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
 }
 
 .site-header {
-  margin-bottom: 2.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .site-header h1 {
   margin: 0;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.05rem;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .site-header a {
-  color: #ece6f5;
+  color: #f4ecd8;
+}
+
+.site-main {
+  flex: 1 0 auto;
 }
 
 .page-title {
   margin: 0 0 1.4rem;
-  color: #ece6f5;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.1rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 1.15;
+  color: #f4ecd8;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 p {
@@ -59,64 +59,45 @@ p {
 }
 
 em {
-  color: #b7a9cf;
+  color: rgba(244, 236, 216, 0.7);
 }
 
 a {
-  color: #c9b6ff;
+  color: #f4ecd8;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ece6f5;
-  text-decoration: underline;
-}
-
-a.current {
-  color: #ece6f5;
   text-decoration: underline;
 }
 
 .site-footer {
-  margin-top: 3rem;
-}
-
-.site-footer hr {
-  margin-bottom: 1.1rem;
-  border: 0;
-  border-top: 1px solid rgba(236, 230, 245, 0.16);
+  flex-shrink: 0;
+  margin-top: 2.5rem;
 }
 
 .site-footer ul.links {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.55rem 0;
+  gap: 0.4rem 1.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'IBM Plex Mono', monospace;
 }
 
 .site-footer ul.links a {
-  color: #b7a9cf;
-  font-size: 0.76rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.site-footer ul.links a:hover,
-.site-footer ul.links a.current {
-  color: #ece6f5;
+  color: rgba(244, 236, 216, 0.6);
+  font-size: 0.8rem;
+  text-transform: lowercase;
   text-decoration: none;
 }
 
-.site-footer ul.links li::before {
-  content: "\2022";
-  margin: 0 1rem;
-  color: rgba(236, 230, 245, 0.16);
+.site-footer ul.links a:hover {
+  color: #f4ecd8;
+  text-decoration: underline;
 }
 
-.site-footer ul.links li:first-child::before {
-  content: none;
-  margin: 0;
+.site-footer ul.links a.current {
+  color: #f4ecd8;
 }
