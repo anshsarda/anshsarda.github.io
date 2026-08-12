@@ -1,6 +1,7 @@
 .site-footer {
   position: fixed;
-  left: calc(25vw + #{$page-margin});
+  left: 25vw;
+  width: 50vw;
   bottom: $page-margin;
   border-top: 1px solid rgba($cream, 0.4);
   padding-top: 0.75rem;

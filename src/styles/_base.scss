@@ -17,10 +17,9 @@ html {
 
 body {
   margin: 0 0 0 25vw;
+  width: 50vw;
   min-height: 100vh;
-  max-width: $max-width;
-  padding: $page-margin;
-  padding-bottom: $page-margin * 2;
+  padding: $page-margin 0 ($page-margin * 2) 0;
   background: transparent;
   color: $cream;
   font-size: 1.05rem;
