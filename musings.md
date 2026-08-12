@@ -11,12 +11,15 @@ permalink: /musings/
 
 <hr class="entry-divider">
 
-{% assign cutoff = site.time | date: '%s' | minus: 2592000 %}
-{% assign recent_musings = site.musings | where_exp: "p", "p.date | date: '%s' > cutoff" | sort: "date" | reverse %}
-{% for post in recent_musings %}
+{% assign cutoff = site.time | date: '%s' | plus: 0 | minus: 2592000 %}
+{% assign all_musings = site.musings | sort: "date" | reverse %}
+{% for post in all_musings %}
+{% assign post_epoch = post.date | date: '%s' | plus: 0 %}
+{% if post_epoch > cutoff %}
 <div class="entry">
   <a class="entry-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   <span class="entry-date">{{ post.date | date: "%m/%d/%y" }}</span>
 </div>
 <hr class="entry-divider">
+{% endif %}
 {% endfor %}
