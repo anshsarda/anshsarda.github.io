@@ -65,6 +65,8 @@ a:hover {
   position: fixed;
   left: calc(25vw + 3rem);
   bottom: 3rem;
+  border-top: 1px solid rgba(244, 236, 216, 0.4);
+  padding-top: 0.75rem;
 }
 
 .site-footer ul.links {
@@ -79,7 +81,7 @@ a:hover {
 
 .site-footer ul.links a {
   color: rgba(244, 236, 216, 0.6);
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   text-transform: lowercase;
   text-decoration: none;
 }
