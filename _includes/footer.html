@@ -1,7 +1,9 @@
-<footer class="footer" style="background-color: #1a222c;">
-    <p>&copy; {{site.username}}</p>
-    <p>Template by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
+<footer class="site-footer">
+  <hr />
+  <ul class="links">
+    <li><a href="{{ "/" | prepend: site.baseurl }}"{% if page.nav == "about" %} class="current"{% endif %}>About</a></li>
+    <li><a href="{{ "/musings/" | prepend: site.baseurl }}"{% if page.nav == "musings" %} class="current"{% endif %}>Musings</a></li>
+    <li><a href="{{ "/path/" | prepend: site.baseurl }}"{% if page.nav == "path" %} class="current"{% endif %}>Path</a></li>
+    <li><a href="{{ "/contact/" | prepend: site.baseurl }}"{% if page.nav == "contact" %} class="current"{% endif %}>Contact</a></li>
+  </ul>
 </footer>
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>

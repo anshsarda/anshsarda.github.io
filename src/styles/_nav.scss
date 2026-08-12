@@ -1,0 +1,43 @@
+.site-footer {
+  margin-top: 3rem;
+}
+
+.site-footer hr {
+  margin-bottom: 1.1rem;
+  border: 0;
+  border-top: 1px solid $rule;
+}
+
+.site-footer ul.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $font-mono;
+}
+
+.site-footer ul.links a {
+  color: $text-muted;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-footer ul.links a:hover,
+.site-footer ul.links a.current {
+  color: $text;
+  text-decoration: none;
+}
+
+.site-footer ul.links li::before {
+  content: "\2022";
+  margin: 0 1rem;
+  color: $rule;
+}
+
+.site-footer ul.links li:first-child::before {
+  content: none;
+  margin: 0;
+}

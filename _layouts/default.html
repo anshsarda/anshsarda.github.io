@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body style="background-image: linear-gradient(#1a222c, #1a222c, #415670, #1a222c);">
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-     <section id="projects">
-        {% include projects.html %}
-      </section>
-      {% include footer.html %}
-  </body>
+{% include head.html %}
+<body>
+<div class="site-shell">
+  <header class="site-header">
+    <h1><a href="{{ "/" | prepend: site.baseurl }}">{{ site.username }}</a></h1>
+  </header>
+
+  <main class="site-main">
+    {% unless page.home %}<h2 class="page-title">{{ page.title }}</h2>{% endunless %}
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</div>
+</body>
+</html>

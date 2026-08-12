@@ -1,18 +1,13 @@
 # Site settings
 title: Ansh Sarda
-description:
-#baseurl: "/blog" # the subpath of your site, e.g. /blog
+description: The personal site of Ansh Sarda.
 
 # User settings
 username: Ansh Sarda
-user_description_theory: Hi! My name is Ansh, I'm an undergrad student at UCSD studying Cognitive and Behavioral Neuroscience. My future aspirations include a Master's degree in Data Science and a career in Computational Neuroscience. This website is a portfolio of my skill set, demonstrated in the projects below. Thanks for checking it out!
-user_title: pardon the clutter, still cleaning up
 email: anshsarda@outlook.com
-#gplus_username:  lorem_ipsum
-
 
 # Google-analytics
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src', 'node_modules']

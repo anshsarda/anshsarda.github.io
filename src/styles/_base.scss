@@ -1,45 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Crimson+Pro:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  min-height: 100%;
+  background-color: $purple-dark;
+  background: linear-gradient(160deg, $purple-dark, $purple-mid 55%, $purple-dark);
+  background-attachment: fixed;
+}
 
 body {
-    margin: 2000px;
-    padding: 0;
-    font-size: 100%;
-    line-height: 1.5;
-    color: #555;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+  max-width: $max-width;
+  background: transparent;
+  color: $text;
+  font-family: $font-serif;
+  font-size: 1.08rem;
 }
-article, aside, figcaption, figure, footer, header, nav, section {
-    display: block;
+
+.site-header {
+  margin-bottom: 2.75rem;
 }
-h1, h2, h3, h4, stong {
-    margin-top: 1em;
-    margin-left: 2000px;
-    padding-top: 1em;
-    line-height: 1.25;
-    color: #333;
+
+.site-header h1 {
+  margin: 0;
+  font-family: $font-mono;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
-h1 {
-    font-size: 2.5rem;
+
+.site-header a {
+  color: $text;
 }
-h2 {
-    font-size: 2rem;
+
+.page-title {
+  margin: 0 0 1.4rem;
+  color: $text;
+  font-family: $font-display;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
 }
-h3 {
-    font-size: 1.5rem;
+
+p {
+  line-height: 1.6;
+  text-align: justify;
 }
-h4 {
-    font-size: 1rem;
+
+em {
+  color: $text-muted;
 }
-ul, ol {
-    margin: 1em 0;
-    padding-left: 40px;
+
+a {
+  color: $link;
+  text-decoration: none;
 }
-p, figure {
-    margin: 2000px;
+
+a:hover {
+  color: $text;
+  text-decoration: underline;
 }
-a img {
-    border: none;
-}
-sup, sub {
-    line-height: 0;
+
+a.current {
+  color: $text;
+  text-decoration: underline;
 }
