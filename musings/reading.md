@@ -1,15 +1,15 @@
 ---
 layout: default
 nav: musings
-title: Words
-permalink: /musings/words/
+title: Reading
+permalink: /musings/reading/
 ---
 
 <div class="top-links"><a href="{{ "/musings/" | prepend: site.baseurl }}">back</a></div>
 
 <hr class="entry-divider">
 
-{% assign topic_posts = site.musings | where: "topic", "words" | sort: "date" | reverse %}
+{% assign topic_posts = site.musings | where: "topic", "reading" | sort: "date" | reverse %}
 {% for post in topic_posts %}
 <div class="entry">
   <a class="entry-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

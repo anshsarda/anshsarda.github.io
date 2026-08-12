@@ -5,7 +5,7 @@ title: Musings
 permalink: /musings/
 ---
 
-<div class="top-links"><a href="{{ "/musings/world/" | prepend: site.baseurl }}">world</a> • <a href="{{ "/musings/food/" | prepend: site.baseurl }}">food</a> • <a href="{{ "/musings/words/" | prepend: site.baseurl }}">words</a> • <a href="{{ "/musings/people/" | prepend: site.baseurl }}">people</a> • <a href="{{ "/musings/self/" | prepend: site.baseurl }}">self</a></div>
+<div class="top-links"><a href="{{ "/musings/world/" | prepend: site.baseurl }}">world</a> • <a href="{{ "/musings/food/" | prepend: site.baseurl }}">food</a> • <a href="{{ "/musings/reading/" | prepend: site.baseurl }}">reading</a> • <a href="{{ "/musings/people/" | prepend: site.baseurl }}">people</a> • <a href="{{ "/musings/self/" | prepend: site.baseurl }}">self</a></div>
 
 <h2 class="section-label">recents</h2>
 
