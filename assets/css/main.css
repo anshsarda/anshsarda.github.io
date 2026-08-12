@@ -39,10 +39,6 @@ body {
   font-weight: 700;
 }
 
-.site-header a {
-  color: #f4ecd8;
-}
-
 .top-links {
   display: flex;
   gap: 0.9rem;
