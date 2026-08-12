@@ -17,8 +17,7 @@ body {
   min-height: 100vh;
   max-width: 640px;
   padding: 3rem;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 6rem;
   background: transparent;
   color: #f4ecd8;
   font-family: Helvetica, Arial, sans-serif;
@@ -40,19 +39,6 @@ body {
   color: #f4ecd8;
 }
 
-.site-main {
-  flex: 1 0 auto;
-}
-
-.page-title {
-  margin: 0 0 1.4rem;
-  color: #f4ecd8;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
 p {
   line-height: 1.6;
   text-align: justify;
@@ -72,8 +58,9 @@ a:hover {
 }
 
 .site-footer {
-  flex-shrink: 0;
-  margin-top: 2.5rem;
+  position: fixed;
+  left: 3rem;
+  bottom: 3rem;
 }
 
 .site-footer ul.links {

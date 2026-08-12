@@ -14,8 +14,7 @@ body {
   min-height: 100vh;
   max-width: $max-width;
   padding: $page-margin;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: $page-margin * 2;
   background: transparent;
   color: $cream;
   font-family: $font;
@@ -35,19 +34,6 @@ body {
 
 .site-header a {
   color: $cream;
-}
-
-.site-main {
-  flex: 1 0 auto;
-}
-
-.page-title {
-  margin: 0 0 1.4rem;
-  color: $cream;
-  font-family: $font;
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.2;
 }
 
 p {
