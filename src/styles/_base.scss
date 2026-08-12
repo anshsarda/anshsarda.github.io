@@ -40,10 +40,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.top-links a + a::before {
-  content: " • ";
-}
-
 p {
   line-height: 1.6;
   text-align: justify;
