@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 0 0 25vw;
   min-height: 100vh;
   max-width: 640px;
   padding: 3rem;
@@ -63,7 +63,7 @@ a:hover {
 
 .site-footer {
   position: fixed;
-  left: 3rem;
+  left: calc(25vw + 3rem);
   bottom: 3rem;
 }
 

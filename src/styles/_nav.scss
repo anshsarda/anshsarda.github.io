@@ -1,6 +1,6 @@
 .site-footer {
   position: fixed;
-  left: $page-margin;
+  left: calc(25vw + #{$page-margin});
   bottom: $page-margin;
 }
 
